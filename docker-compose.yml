@@ -3,12 +3,12 @@ services:
         build:
             context: .
         environment:
-            - TZ=Europe/Madrid
+            - TZ=Asia/Tokyo
             - DISABLE_AUTH=true
             - PYTHONUSERBASE=/home/rstudio/.cache/pip
         volumes:
             - .:/home/rstudio/quarto-slides-example
-            - cache:/home/rstudio/.cache
-volumes:
-  cache:
-    external: true
+#             - cache:/home/rstudio/.cache
+# volumes:
+#   cache:
+#     external: true
